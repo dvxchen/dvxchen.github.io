@@ -1,25 +1,34 @@
-# dvxchen.github.io
+<!-- 每次保存自动刷新目录，快捷键Ctrl+Shift+P → Create Table of Contents -->
+[TOC]
 
-# Markdown笔记
-## 常用语法
-- 加粗：**文字**
-- 代码块
-```bash
-git push
+# 文档标题：测试与自动化技术手册
+## 1 项目概述
+### 1.1 项目简介
+本文档用于整理 **UI5自动化(wdi5)、AI Agent测试、排错记录**，托管于GitHub Pages，全程使用标准Markdown语法渲染，无乱码、排版稳定。
+
+### 1.2 文档规范
+1. 所有文件统一 UTF-8 编码；
+2. 图片统一存放路径：`assets/img/xxx.png`；
+3. 代码块标注语言，便于高亮识别；
+4. 标题层级严格：# > ## > ###，不越级。
+
+## 2 常用代码示例
+### 2.1 JS/Node 示例
+```javascript
+// ESM 环境 __dirname 兼容代码
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// 路径拼接
+const configPath = join(__dirname, "wdio.conf.js");
+console.log("配置路径：", configPath);
 
 
-# 使用步骤
-1. 在github.com仓库网页依次新建上面4个文件，粘贴对应内容并提交；
-2. 进入仓库 `Settings -> Pages`，来源选择`Deploy from a branch`，main分支、根目录`/`，保存；
-3. 等待1分钟，访问：`用户名.github.io/仓库名/`。
-
-# 日常新增页面规则
-1. 新建`xxx.html`，复制任意一个页面的头部导航模板；
-2. 首页导航`<a>`新增一条跳转链接；
-3. 提交文件，页面自动更新。
-
-# 优势
-1. 永久UTF-8，中文绝不乱码；
-2. 全部相对路径，不会出现CSS/页面404；
-3. 全程网页编辑，不需要Git、PAT、命令行；
-4. 无构建、无MkDocs、无yml配置，永久稳定。
+- [文档标题：测试与自动化技术手册](#文档标题测试与自动化技术手册)
+  - [1 项目概述](#1-项目概述)
+    - [1.1 项目简介](#11-项目简介)
+    - [1.2 文档规范](#12-文档规范)
+  - [2 常用代码示例](#2-常用代码示例)
+    - [2.1 JS/Node 示例](#21-jsnode-示例)
