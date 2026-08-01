@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>我的GitHub Pages</title>
-  <style>
-    body { max-width: 800px; margin: 2rem auto; padding: 0 20px; font-family: "Microsoft Yahei", sans-serif; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档首页</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        body {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 24px;
+            font-family: "Microsoft YaHei", system-ui, sans-serif;
+            line-height: 1.7;
+        }
+        nav {
+            background: #2478f5;
+            padding: 14px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 24px;
+            font-size: 17px;
+        }
+        nav a:hover {text-decoration: underline;}
+        h1 {margin-bottom: 20px;color: #222;}
+        p {font-size: 16px;color: #333;margin-bottom:12px;}
+    </style>
 </head>
 <body>
-  <h1>Hello GitHub Pages!</h1>
-  <p>这是我在 github.com 上的最简站点。</p>
+    <nav>
+        <a href="index.html">🏠 首页</a>
+        <a href="guide.html">📖 教程文档</a>
+        <a href="note.html">📝 日常笔记</a>
+        <a href="README.md">📄 Markdown笔记</a>
+    </nav>
+
+    <h1>欢迎来到文档站点</h1>
+    <p>本站点为静态网页，修改文件提交后1分钟自动更新。</p>
+    <p>特点：中文不乱码、无路径404、无需打包部署、纯原生HTML。</p>
 </body>
 </html>
